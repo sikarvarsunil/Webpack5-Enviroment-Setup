@@ -1,0 +1,39 @@
+@use "variables";
+body {
+  font-size: variables.$size12;
+  color: var(--text);
+  background-color: variables.$primary-color;
+}
+h1 {
+  font-size: variables.$size40;
+  color: variables.$heading-color;
+}
+h2 {
+  font-size: variables.$size32;
+  color: variables.$heading-color;
+}
+h3 {
+  font-size: variables.$size24;
+  color: variables.$heading-color;
+}
+h4 {
+  font-size: variables.$size18;
+  color: variables.$heading-color;
+}
+h5 {
+  font-size: variables.$size16;
+  color: variables.$heading-color;
+}
+.main {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.logo {
+  width: 200px;
+  height: 100px;
+  background: url("../Images/eyelogo.png") no-repeat;
+  background-size: 100px;
+  padding: 37px 0 0 114px;
+  font-size: variables.$size40;
+}
