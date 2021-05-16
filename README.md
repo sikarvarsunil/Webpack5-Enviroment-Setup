@@ -31,6 +31,7 @@ npm i -D webpack webpacl-cli webpack-dev-server
 
 <h2 align="center">install Babel Loader to compile ES6/7 to ES5</h2>
 run commanad and install @babel/core @babel/preset-env babel-loader @babel/preset-react
+
 ```bash
 npm i -D @babel/core @babel/preset-env babel-loader @babel/preset-react
 ```
@@ -40,30 +41,35 @@ npm i -D @babel/core @babel/preset-env babel-loader @babel/preset-react
 
 <h2 align="center">install Sass Loader to compile Scss to css</h2>
 run commanad and install sass sass-loader
+
 ```bash
 npm i -D sass sass-loader
 ```
 
 <h2 align="center">install Postcss Loader to handle fallback for older browser</h2>
 install postcss postcss-preset-env postcss-loader
+
 ```bash
 npm i -D postcss postcss-preset-env postcss-loader
 ```
 
 <h2 align="center">Update src/index.html file in dist folder</h2>
 install html-webpack-plugin
+
 ```bash
 npm i -D html-webpack-plugin
 ```
 
 <h2 align="center">auto clean dist folder before new build</h2>
 clean dist folder with clean-webpack-plugin
+
 ```bash
 npm i -D clean-webpack-plugin
 ```
 
 <h2 align="center">Add  React and React-dom in out project</h2>
 Add React and React-dom
+
 ```bash
 npm i react react-dom
 ```
