@@ -16,14 +16,14 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, "./dist"),
-    assetModuleFilename: "images/[hash][ext][query]" // create images foler in dist
+    assetModuleFilename: "images/[hash][ext][query]" // Add hash name in images
   },
   module: {
     rules: [
       {
         test: /\.(png|jpg|jpeg|gif|svg)$/i,
         type: "asset" 
-        // 1. if image is using in files. create images foler in dist and append all images inside. 
+        // 1. if image is using in files. create images folder in dist and append all images inside. 
         // 2. All images which are using in background css will merge with main.js
       },
       {
@@ -48,8 +48,8 @@ module.exports = {
     ] 
   },
   plugins: [
-    new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin(),
+    new CleanWebpackPlugin(), // clean dist folder before new build
+    new MiniCssExtractPlugin(), // complie ES6/7 into ES5
     new HtmlWebpackPlugin({
       template: './src/index.html',
       title: 'Webpack 5 Enviroment Set up + React ',
